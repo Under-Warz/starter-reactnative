@@ -1,0 +1,48 @@
+{
+  "name": "Starter React-Native",
+  "version": "1.0.0",
+  "author": { 
+    "name": "Laurent Menu",
+    "email": "hello@lmenu.fr",
+    "url" : "https://www.lmenu.fr"
+  },
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "sourcemaps": "react-native bundle --dev false --platform ios --entry-file index.ios.js --bundle-output sourcemaps/ios-release.bundle --sourcemap-output sourcemaps/ios-release.bundle.map; react-native bundle --dev false --platform android --entry-file index.android.js --bundle-output sourcemaps/android-release.bundle --sourcemap-output sourcemaps/android-release.bundle.map; bugsnag-sourcemaps upload --api-key 5c548849642cee2b29197417e1ce2cfb --minified-file sourcemaps/ios-release.bundle --source-map sourcemaps/ios-release.bundle.map --minified-url main.jsbundle --upload-sources --overwrite; bugsnag-sourcemaps upload --api-key 5c548849642cee2b29197417e1ce2cfb --minified-file sourcemaps/android-release.bundle --source-map sourcemaps/android-release.bundle.map --minified-url main.jsbundle --upload-sources --overwrite",
+    "android-release": "react-native run-android --variant=release",
+    "build-android": "cd android && ./gradlew assembleRelease"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^5.2.0",
+    "apisauce": "^0.14.1",
+    "bugsnag-react-native": "^2.3.2",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "native-base": "^2.3.2",
+    "react": "16.0.0-alpha.12",
+    "react-native": "^0.48.3",
+    "react-native-fetch-blob": "^0.10.8",
+    "react-native-img-cache": "^1.4.0",
+    "react-native-infinite-scroll-view": "^0.4.3",
+    "react-native-onesignal": "^3.0.5",
+    "react-native-orientation": "^3.1.0",
+    "react-navigation": "^1.0.0-beta.11",
+    "react-redux": "^5.0.6",
+    "reactotron-react-native": "^1.12.3",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^4.9.1",
+    "redux-saga": "^0.15.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-jest": "21.0.2",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "21.1.0",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
