@@ -4,7 +4,7 @@
 
 ## Features
 
-- React Native
+- [React Native](https://facebook.github.io/react-native/)
 - [Native Base](https://nativebase.io/)
 - [Redux](http://redux.js.org/)
 - [Apisauce](https://github.com/infinitered/apisauce)
@@ -12,6 +12,17 @@
 - [React Navigation](https://github.com/react-community/react-navigation)
 - [Bugsnag](https://www.bugsnag.com/)
 - [OneSignal](https://onesignal.com/)
+
+## Installation
+
+You need to first init a react native empty project with `react-native init AwesomeProject`.
+Then insert starter's files into your newly generated app.
+
+The entry file point is in `src/Root`.
+
+```js
+AppRegistry.registerComponent('MyApp', () => Root);
+```
 
 ## Development
 ```bash
