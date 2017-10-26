@@ -21,7 +21,17 @@ Then insert starter's files into your newly generated app.
 The entry file point is in `src/Root`.
 
 ```js
+/**
+ * Sample React Native App
+ * https://github.com/facebook/react-native
+ * @flow
+ */
+
+import { AppRegistry } from 'react-native';
+import Root from './src/Root';
+
 AppRegistry.registerComponent('MyApp', () => Root);
+
 ```
 
 ## Development
