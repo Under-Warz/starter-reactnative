@@ -25,11 +25,6 @@ class Home extends React.Component {
   // -                                           CONSTRUCTOR
 	constructor(props) {
 		super(props);
-
-		this.state = {
-			geolocPermissionDenied: false,
-      isGettingLocation: false
-		};
 	}
 
 	//________________________________________________________
