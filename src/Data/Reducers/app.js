@@ -19,8 +19,8 @@ export default function reducer(state = initialState, action = {}) {
     // Show loader
     /*case USER_LOGIN_REQUESTED:
     	newState.isLoading = true;
-    	return newState;
-	}*/
+    	return newState;*/
+	}
 
 	newState.isLoading = false;
   return newState;
