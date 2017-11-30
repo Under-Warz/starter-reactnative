@@ -38,7 +38,7 @@ Install dependencies
 
 ```bash
 yarn install
-react-native link
+RNFB_ANDROID_PERMISSIONS=true react-native link
 ```
 
 ## Development
