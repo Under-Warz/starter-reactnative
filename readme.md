@@ -34,6 +34,13 @@ AppRegistry.registerComponent('MyApp', () => Root);
 
 ```
 
+Install dependencies 
+
+```bash
+yarn install
+react-native link
+```
+
 ## Development
 ```bash
 react-native run-android|run-ios
