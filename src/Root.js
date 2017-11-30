@@ -3,8 +3,6 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { Client, Configuration } from 'bugsnag-react-native';
 import Orientation from 'react-native-orientation';
-import numeral from 'numeral';
-import 'numeral/locales/fr';
 
 // import classes
 import configureStore from './Data/Store/configureStore';
