@@ -7,6 +7,7 @@ import Header from '../Components/Header';
 
 // import views
 import Home from '../Views/Home';
+import Sidebar from '../Views/Sidebar';
 
 const Routes = {
 	App: { 
@@ -25,13 +26,14 @@ const Routes = {
 			}
 		}, {
 			initialRouteName: 'Root',
-			contentComponent: props => <SideBar {...props} />
+			contentComponent: props => <Sidebar {...props} />
 		})
 	}
 };
 
 const navigator = StackNavigator(Routes, {
 	initialRouteName: 'App',
+	headerMode: 'none',
 	navigationOptions: {
 		gesturesEnabled: false
 	}

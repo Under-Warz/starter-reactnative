@@ -17,7 +17,8 @@ import getTheme from '../native-base-theme/components';
 import variables from '../native-base-theme/variables/platform';
 
 const mapStateToProps = (state) => ({
-  app: state.app
+  app: state.app,
+  navigation: state.navigation
 });
 
 class App extends React.Component {

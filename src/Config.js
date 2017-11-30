@@ -19,7 +19,7 @@ export default (() => {
 			version: "1",
 			config: {
 		  	storage: AsyncStorage,
-		  	blacklist: ['']
+		  	blacklist: []
 		  }
 		}
 	};
